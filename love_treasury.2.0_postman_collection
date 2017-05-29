@@ -1,0 +1,61 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Love Treasury 2.0",
+		"_postman_id": "0e411fb3-4179-a23e-1537-0ab5d1766f4c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"url": "https://{{API_HOST}}/auth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jaredljennings@gmail.com\",\n\t\"name\": \"JJ\",\n\t\"password\": \"Example1234\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate User",
+			"request": {
+				"url": "https://{{API_HOST}}/auth/sign_in",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"jaredljennings@gmail.com\",\n\t\"password\": \"Example1234\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
